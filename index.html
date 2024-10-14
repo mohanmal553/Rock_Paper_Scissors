@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="RPS.css">
+    <title>Rock_Paper_Scissor</title>
+</head>
+<body>
+    <div class="div-main">
+        <div class="div-main-ch1">
+            <div class="name">ROCK, PAPER, SCISSORS</div>
+            <div class="score">SCORE</div>
+            <div class="uc-score">
+                <div class="s-com">
+                    <div class="s-name">Computer</div>
+                    <div class="s-value" id="c-score">0</div> <!--Computer Score-->
+                </div>
+                <div class="s-user">
+                    <div class="s-name">Your</div>
+                    <div class="s-value" id="u-score">0</div>  <!--User Score-->
+                </div>
+            </div>
+        </div>
+        <!--Computer Choose & User Choose-->
+        <div class="output1">Com: <span id="com_disp"></span> &nbsp;&nbsp;&nbsp;You: <span id="user_disp"></span></div>
+
+        <div class="div-main-ch2">
+            <div class="div-main-ch2-ch1" id="rock-btn">
+                <div class="logo-1"><i class="fa-solid fa-hand-fist"></i></div>
+                <div class="text-1">ROCK</div>
+            </div>
+            <div class="div-main-ch2-ch2" id="paper-btn">
+                <div class="logo-2"><i class="fa-solid fa-hand"></i></div>
+                <div class="text-2">PAPER</div>
+            </div>
+            <div class="div-main-ch2-ch3" id="scissors-btn">
+                <div class="logo-3"><i class="fa-solid fa-hand-peace"></i></div>
+                <div class="text-3">SCISSORS</div>
+            </div>
+        </div>
+        <!--Who is won the match or draw-->
+        <div class="output2" id="match-position"></div>
+
+        <!--Reset Button or Play again-->
+        <div class="div-main-ch3" id="r-btn">
+            <div class="reset-btn"><i class="fa-solid fa-arrow-rotate-right"></i></div>
+        </div>
+
+    </div>
+    <script src="RPS.js"></script>
+</body>
+</html>
